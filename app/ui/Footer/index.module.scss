@@ -1,0 +1,47 @@
+.main {
+  @apply bg-primary py-12;
+}
+
+.onTop {
+  @apply relative z-[7];
+}
+
+.copyright {
+  @apply text-center text-white text-[13px] text-opacity-50 hover:opacity-100;
+
+  a svg {
+    @apply fill-white inline opacity-50;
+  }
+}
+
+.contact {
+  @apply flex items-center justify-center space-x-8 py-8 border-b-2 border-primary-light;
+
+  &Item {
+    @apply text-white text-base;
+
+    a {
+      @apply hover:underline;
+    }
+  }
+
+  &Icon {
+    @apply inline mr-3 text-white text-xl;
+  }
+}
+
+.links {
+  @apply flex justify-end items-center space-x-6;
+
+  a {
+    @apply cursor-pointer hover:translate-x-1 transition duration-300 ease-in-out;
+  }
+}
+
+.social {
+  @apply flex flex-row items-center space-x-4;
+
+  a {
+    @apply cursor-pointer hover:translate-x-1 transition duration-300 ease-in-out;
+  }
+}

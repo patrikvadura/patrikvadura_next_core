@@ -1,0 +1,64 @@
+{
+  "menu": {
+    "items": [
+      {
+        "id": 1,
+        "title": "O nás",
+        "link": "/about"
+      },
+      {
+        "id": 2,
+        "title": "Služby",
+        "link": "/services",
+        "submenu": [
+          {
+            "id": 1,
+            "title": "Webové stránky",
+            "link": "/services/website"
+          },
+          {
+            "id": 2,
+            "title": "Vizuální identita",
+            "link": "/services/identity"
+          },
+          {
+            "id": 3,
+            "title": "Grafický design",
+            "link": "/services/design"
+          },
+          {
+            "id": 3,
+            "title": "3D vizualizace a animace",
+            "link": "/services/3d"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Portfolio",
+        "link": "/portfolio"
+      },
+      {
+        "id": 4,
+        "title": "Kontakt",
+        "link": "/contact"
+      }
+    ]
+  },
+  "footer": {
+    "socialItems": [
+      {
+        "id": 1,
+        "label": "Facebook",
+        "icon": "mingcute:facebook-line",
+        "link": "https://facebook.com"
+      },
+      {
+        "id": 2,
+        "label": "Instagram",
+        "icon": "ci:instagram",
+        "link": "https://facebook.com"
+      }
+    ]
+  }
+}

@@ -1,5 +1,6 @@
-'use client';
-import React, { useEffect } from 'react';
+'use client'
+import React, { useEffect, useState, useRef } from 'react'
+import classes from './loader.module.scss'
 
 function LoadingScreen() {
   useEffect(() => {
@@ -29,32 +30,52 @@ function LoadingScreen() {
         tl.to('.loader-wrap', { zIndex: -1, display: 'none' });
         tl.from('header', { y: 200 }, '-=1.5');
         tl.from(
-          'header .container',
-          { y: 40, opacity: 0, delay: 0.3 },
-          '-=1.5'
+            'header .container',
+            { y: 40, opacity: 0, delay: 0.3 },
+            '-=1.5'
         );
       }
     }, 100);
   }, []);
 
-  return (
-    <div className="loader-wrap">
-      <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
-        <path id="svg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
-      </svg>
+  const loadingAnimationPathRef = useRef(null);
 
-      <div className="loader-wrap-heading">
-        <div className="load-text">
-          <span>L</span>
-          <span>o</span>
-          <span>a</span>
-          <span>d</span>
-          <span>i</span>
-          <span>n</span>
-          <span>g</span>
+  const [animationEnded, setAnimationEnded] = useState(false);
+
+  useEffect(() => {
+    if (!animationEnded) {
+      const loadingAnimationPath = loadingAnimationPathRef.current;
+      if (loadingAnimationPath) {
+        loadingAnimationPath.addEventListener('animationend', () => {
+          setAnimationEnded(true);
+          loadingAnimationPath.style.strokeDashoffset = 0;
+          loadingAnimationPath.style.strokeDasharray = '0';
+        });
+      }
+    }
+  }, [animationEnded, loadingAnimationPathRef]);
+
+  return (
+      <div className="loader-wrap">
+        <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
+          <path id="svg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
+        </svg>
+
+        <div className="loader-wrap-heading">
+          <div className="load-text">
+            <div className={classes.loader}>
+              <svg viewBox="0 0 313 187">
+                <path
+                    ref={loadingAnimationPathRef}
+                    className={classes.loadingAnimation__path}
+                    d="M209 187H107L0 0h102l107 187Zm-53-94 54-93h102l-53 93H156Z"
+                    fill={'#04080b'}
+                />
+              </svg>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
   );
 }
 

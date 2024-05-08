@@ -27,7 +27,7 @@
             "link": "/services/design"
           },
           {
-            "id": 3,
+            "id": 4,
             "title": "3D vizualizace a animace",
             "link": "/services/3d"
           }
@@ -42,6 +42,33 @@
         "id": 4,
         "title": "Kontakt",
         "link": "/contact"
+      }
+    ],
+    "other": [
+      {
+        "id": 1,
+        "title": "Kariéra",
+        "link": "/career"
+      },
+      {
+        "id": 2,
+        "title": "Technologie",
+        "link": "/technology"
+      },
+      {
+        "id": 3,
+        "title": "Wikipedie",
+        "link": "/wikipedie"
+      },
+      {
+        "id": 4,
+        "title": "Webové vizitky",
+        "link": "/webove-vizitky"
+      },
+      {
+        "id": 5,
+        "title": "Šablonové weby",
+        "link": "/sablonove-weby"
       }
     ]
   },

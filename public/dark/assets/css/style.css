@@ -3536,62 +3536,6 @@ body.loaded {
   vertical-align: 12px;
 }
 
-.hamenu {
-  position: fixed;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100vh;
-  background: #1d1d1d;
-  overflow: hidden;
-  z-index: 9999;
-  -webkit-transition: all 0.5s cubic-bezier(1, 0, 0.55, 1);
-  -o-transition: all 0.5s cubic-bezier(1, 0, 0.55, 1);
-  transition: all 0.5s cubic-bezier(1, 0, 0.55, 1);
-}
-
-.hamenu .logo {
-  position: absolute;
-  top: 40px;
-  left: 40px;
-}
-
-.hamenu .close-menu {
-  position: absolute;
-  top: 30px;
-  right: 40px;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 50%;
-  text-align: center;
-  cursor: pointer;
-  z-index: 4;
-}
-
-.hamenu .logo,
-.hamenu .close-menu {
-  -webkit-transform: translateY(-100px);
-  -ms-transform: translateY(-100px);
-  transform: translateY(-100px);
-  opacity: 0;
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  transition: all 0.4s;
-}
-
-.hamenu.open .logo,
-.hamenu.open .close-menu {
-  -webkit-transform: translateY(0);
-  -ms-transform: translateY(0);
-  transform: translateY(0);
-  opacity: 1;
-  -webkit-transition-delay: 1s;
-  -o-transition-delay: 1s;
-  transition-delay: 1s;
-}
-
 .hamenu.open .menu-links .main-menu > li .link {
   -webkit-transform: translateY(0);
   -ms-transform: translateY(0);
@@ -3626,13 +3570,6 @@ body.loaded {
   transition-delay: 0.7s;
 }
 
-.hamenu .menu-links {
-  color: #fff;
-  height: 100vh;
-  padding-top: 140px;
-  overflow: auto;
-}
-
 .hamenu .menu-links::-webkit-scrollbar {
   width: 5px;
 }
@@ -3644,71 +3581,6 @@ body.loaded {
 .hamenu .menu-links::-webkit-scrollbar-thumb {
   background: rgba(255, 255, 255, 0.2);
   border-radius: 5px;
-}
-
-.hamenu .menu-links .main-menu {
-  position: relative;
-  z-index: 2;
-}
-
-.hamenu .menu-links .main-menu ul {
-  margin: 0;
-  padding: 0;
-}
-
-.hamenu .menu-links .main-menu > li {
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
-.hamenu .menu-links .main-menu > li .link {
-  font-size: 50px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  line-height: 1.2;
-  padding: 20px 30px;
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
-  width: 100%;
-  position: relative;
-  display: block;
-  -webkit-transform: translateY(100px);
-  -ms-transform: translateY(100px);
-  transform: translateY(100px);
-  opacity: 0;
-  -webkit-transition: all 0.7s;
-  -o-transition: all 0.7s;
-  transition: all 0.7s;
-}
-
-.hamenu .menu-links .main-menu > li .link i {
-  position: absolute;
-  width: 90px;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(255, 255, 255, 0.02);
-}
-
-.hamenu .menu-links .main-menu > li .link i:before {
-  content: '';
-  width: 1px;
-  height: 16px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  background: #fff;
-}
-
-.hamenu .menu-links .main-menu > li .link i:after {
-  content: '';
-  width: 16px;
-  height: 1px;
-  position: absolute;
-  top: calc(50% + 8px);
-  left: calc(50% - 8px);
-  background: #fff;
 }
 
 .hamenu .menu-links .main-menu > li .link.dopen i:before {
@@ -5804,10 +5676,6 @@ footer.clean-footer.crev:before {
   z-index: 3;
 }
 
-.crev-agency-header .caption h1 {
-  font-size: 85px;
-  line-height: 1.1;
-}
 
 .crev-agency-header .left-clumn,
 .crev-agency-header .right-clumn {
@@ -5855,10 +5723,6 @@ footer.clean-footer.crev:before {
   -webkit-transform-origin: top right;
   -ms-transform-origin: top right;
   transform-origin: top right;
-}
-
-.crev-portfolio-header .caption h1 {
-  font-size: 74px;
 }
 
 .startup-header {
@@ -9173,37 +9037,7 @@ footer.clean-footer.crev:before {
 
 /* Videos
 -----------------------------------------------------------------*/
-.circle-button {
-  position: relative;
-  display: inline-block;
-}
 
-.circle-button.in-bord:after {
-  content: '';
-  position: absolute;
-  top: 55px;
-  left: 55px;
-  right: 55px;
-  bottom: 55px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 50%;
-}
-
-.circle-button.in-bord:before {
-  content: '';
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  right: 15px;
-  bottom: 15px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 50%;
-}
-
-.circle-button .rotate-circle svg {
-  width: 210px;
-  fill: #fff;
-}
 
 .circle-button .arrow {
   position: absolute;
@@ -9220,62 +9054,6 @@ footer.clean-footer.crev:before {
 .circle-button .arrow svg {
   width: 40px;
   height: 40px;
-}
-
-.circle-button .icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-}
-
-.circle-button .in-circle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-}
-
-.circle-button.no-animate .rotate-circle {
-  -webkit-animation: none;
-  animation: none;
-}
-
-.rotate-circle {
-  -webkit-animation-name: rotateCircle;
-  animation-name: rotateCircle;
-  -webkit-animation-duration: 20s;
-  animation-duration: 20s;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-}
-
-@-webkit-keyframes rotateCircle {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes rotateCircle {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
 }
 
 /* Shop
@@ -9483,9 +9261,6 @@ footer.clean-footer.crev:before {
   .crev-agency-header .caption {
     width: 100%;
     padding: 0;
-  }
-  .crev-portfolio-header .caption h1 {
-    font-size: 55px;
   }
   .crev-portfolio-header .numb-fixed {
     position: static;
@@ -9912,9 +9687,6 @@ footer.clean-footer.crev:before {
   .main-header .lg-text h1 {
     font-size: 9vw;
   }
-  .crev-agency-header .caption h1 {
-    font-size: 45px;
-  }
   .digital-header {
     width: 100%;
   }
@@ -9929,9 +9701,6 @@ footer.clean-footer.crev:before {
   }
   body.crev-portfolio section .sec-head .fixed-head h5 {
     font-size: 25px;
-  }
-  .crev-portfolio-header .caption h1 {
-    font-size: 35px;
   }
   .startup-header .caption .lg-text {
     font-size: 35px;

@@ -1,0 +1,25 @@
+.loader {
+  width: 6rem;
+
+  svg {
+    max-width: 6rem;
+  }
+}
+
+.loadingAnimation__path {
+  stroke: white;
+  stroke-width: 2;
+  fill: none;
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  animation: stroke 2s linear;
+}
+
+@keyframes stroke {
+  from {
+    stroke-dashoffset: 600;
+  }
+  to {
+    stroke-dashoffset: -120;
+  }
+}

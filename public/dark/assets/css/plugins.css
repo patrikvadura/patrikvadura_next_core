@@ -1,18 +1,3 @@
-/*-----------------------------------------------------------------------------------
-
-	Theme Name: Ravo
-	Theme URI: http://
-	Description: Creative agency & portfolio
-	Author: UiCamp
-	Author URI: http://themeforest.net/user/UiCamp
-	Version: 1.0
-
------------------------------------------------------------------------------------*/
-
-/* ----------------------------------------------------------------
-			[ All Css Plugins & Helper Classes File ]
------------------------------------------------------------------*/
-
 /* == bootstrap == */
 /*@import url('plugins/bootstrap.min.css');*/
 
@@ -20,13 +5,13 @@
 @import url('plugins/animate.min.css');
 
 /* == ionicons icon font == */
-@import url('plugins/themify-icons.css');
+/*@import url('plugins/themify-icons.css');*/
 
 /* == pe-icon-7-stroke == */
-@import url('plugins/pe-icon-7-stroke.css');
+/*@import url('plugins/pe-icon-7-stroke.css');*/
 
 /* == fontawesome icon font == */
-@import url('plugins/fontawesome-all.min.css');
+/*@import url('plugins/fontawesome-all.min.css');*/
 
 /* == justifiedGallery.min == */
 @import url('plugins/justifiedGallery.min.css');
@@ -35,7 +20,7 @@
 @import url('plugins/magnific-popup.css');
 
 /* == YouTubePopUp == */
-@import url('plugins/YouTubePopUp.css');
+/*@import url('plugins/YouTubePopUp.css');*/
 
 /* == swiper.min font == */
 @import url('plugins/swiper.min.css');

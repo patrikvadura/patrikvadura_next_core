@@ -12,7 +12,6 @@ import LoadingScreen from '@/app/components/Loader'
 import './globals.css'
 
 import '@/public/dark/assets/css/plugins.css'
-import '@/public/dark/assets/css/satoshi.css'
 import '@/public/dark/assets/css/style.css'
 
 const localeFont = localFont({

@@ -92,7 +92,7 @@ function Header() {
             </div>
 
             <div>
-              <h2 className="opacity-50">{yearExperience}</h2>
+              <h2 className="opacity-50">{yearExperience} let</h2>
               <h6 className="sub-title fw-300 mt-10">Zkušeností v oboru</h6>
             </div>
           </div>

@@ -52,13 +52,13 @@ function Footer() {
         <div className="flex mt-8 pt-8 pb-8 px-8 bg-primary-dark rounded-[2rem]">
           <div className={`${classes.social} basis-1/3`}>
             <a href="https://www.facebook.com/PatrikVaduraPage" target="_blank">
-              <i className="fab fa-facebook-f"></i>
+              <Icon icon="bx:bxl-facebook" className={classes.contactIcon} />
             </a>
             <a href="https://www.linkedin.com/in/patrik-vaďura-763380173/" target="_blank">
-              <i className="fab fa-linkedin-in"></i>
+              <Icon icon="flowbite:linkedin-solid" className={classes.contactIcon} />
             </a>
             <a href="https://www.instagram.com/vaduradesign/" target="_blank">
-              <i className="fab fa-instagram"></i>
+              <Icon icon="ph:instagram-logo-bold" className={classes.contactIcon} />
             </a>
           </div>
 

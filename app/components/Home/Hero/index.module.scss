@@ -2,6 +2,10 @@
   @apply text-[45px] md:text-[60px] lg:text-[75px];
 }
 
+.subtitle {
+  @apply underline text-secondary text-xl md:text-2xl;
+}
+
 .description {
   @apply opacity-75 text-lg font-light tracking-wider;
 }

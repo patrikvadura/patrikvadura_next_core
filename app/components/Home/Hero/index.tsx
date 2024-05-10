@@ -33,15 +33,13 @@ function Header() {
 
   return (
     <div className="header crev-portfolio-header section-padding position-re" ref={main}>
-      <div className="container px-6 md:px-0 pt-12 ontop" ref={inner}>
+      <div className="container px-6 md:px-0 pt-4 md:pt-12 ontop" ref={inner}>
         <div className="flex flex-col md:flex-row items-start md:items-center">
           <div className="basis-3/3 md:basis-4/5">
             <div className="caption">
               <h1 className={classes.title}>
                 Váš partner pro vizuální komunikaci a podporu vaší značky{' '}
-                <span className="underline main-color fz-30">
-                  <Link href="/portfolio">Prozkoumejte moji práci</Link>
-                </span>
+            <Link href="/portfolio" className={classes.subtitle}>Prozkoumejte moji práci</Link>
               </h1>
               <div className="flex flex-col md:flex-row mt-8 items-center">
                 <div className="basis-3/3 lg:basis-2/5">

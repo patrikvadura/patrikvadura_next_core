@@ -86,21 +86,21 @@
         "title": "To nejlepší ze dřeva",
         "link": "/portfolio/zalesak",
         "client": "Zálešák s.r.o.",
-        "thumbnail": "/assets/image/portfolio/electra-drive/electradrive_1.webp"
+        "thumbnail": "/assets/image/portfolio/zalesak/zalesak_header_01-scaled.webp"
       },
       {
         "id": 3,
         "title": "Maskot prezentuje firmu nejlépe",
         "link": "/portfolio/rychle-berle",
         "client": "Rychlé berle s.r.o.",
-        "thumbnail": "/dark/assets/imgs/works/2/2.jpg"
+        "thumbnail": "/assets/image/portfolio/rychle-berle/test.gif"
       },
       {
         "id": 4,
         "title": "All you need is wine",
         "link": "/portfolio/wine-gurmet",
         "client": "Wine Gurmet s.r.o.",
-        "thumbnail": "/dark/assets/imgs/works/2/2.jpg"
+        "thumbnail": "/assets/image/portfolio/wine-gurmet/portfolio_winegurmet_3.webp"
       }
     ]
   },

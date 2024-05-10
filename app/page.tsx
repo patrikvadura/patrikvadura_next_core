@@ -19,8 +19,8 @@ export default function CreativePortfolio() {
   return (
     <>
       <div id="smooth-content">
-        <main className="main-bg">
-          <div className="sub-bg o-hidden">
+        <main className="bg-primary">
+          <div className="bg-primary o-hidden">
             <Header />
             <Portfolio />
           </div>

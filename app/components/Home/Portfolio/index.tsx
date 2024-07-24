@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react'
+import React, { useRef } from 'react'
 import data from '@/app/lib/data.json'
 import classes from './index.module.scss'
 import Image from 'next/image'
@@ -8,12 +8,19 @@ import Link from 'next/link'
 import { Button } from '@/app/ui/Button'
 import { Icon } from '@iconify/react'
 
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { useGSAP } from '@gsap/react'
+
+gsap.registerPlugin(ScrollTrigger, useGSAP)
+
 interface Items {
   title: string
   link: string
   client: string
   thumbnail: string
   id: number
+  isUnoptimized: boolean
 }
 
 interface Data {
@@ -23,24 +30,46 @@ interface Data {
 }
 
 function Portfolio() {
+  // @ts-ignore
   const portfolioItems: Data = data
 
+  const title = useRef<HTMLElement | any>()
+  const main = useRef<HTMLElement | any>()
+
+  useGSAP(() => {
+    gsap.to(title.current, {
+      y: 0,
+      duration: 1,
+      scrollTrigger: {
+        trigger: main.current,
+      },
+    })
+  })
+
   return (
-    <div className="container flex flex-col items-center space-y-12 py-12">
-      <h2>Ukázky mých realizovaných projektů</h2>
+    <div className="container flex flex-col items-center space-y-12 py-12" ref={main}>
+      <h2 className={classes.title} ref={title}>
+        Ukázky mých realizovaných projektů
+      </h2>
 
       <div className={classes.main}>
         {portfolioItems.portfolio.items.map((item, index) => (
           <div key={index} className={classes.item}>
             <div>
               <div className={`${classes.itemWrapper} group`}>
-                <Image src={item.thumbnail} width={500} height={500} alt={item.title} />
+                <Image
+                  src={item.thumbnail}
+                  width={500}
+                  height={500}
+                  alt={item.title}
+                  unoptimized={item.isUnoptimized}
+                />
 
                 <div
                   className={`${classes.descriptionWrapper} group-hover:opacity-100 group-hover:translate-y-0`}
                 >
                   <div>
-                    <h5 className={classes.title}>{item.title}</h5>
+                    <h5 className={classes.subtitle}>{item.title}</h5>
                     <p className={classes.client}>{item.client}</p>
                   </div>
 

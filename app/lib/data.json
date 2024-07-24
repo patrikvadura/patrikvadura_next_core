@@ -79,28 +79,29 @@
         "title": "Elektromobilita jako budoucnost",
         "link": "/portfolio/electra-drive",
         "client": "Electra Drive s.r.o.",
-        "thumbnail": "/assets/image/portfolio/electra-drive/electradrive_3.webp"
+        "thumbnail": "/assets/img/portfolio/electra-drive/electradrive_3.webp"
       },
       {
         "id": 2,
         "title": "To nejlepší ze dřeva",
         "link": "/portfolio/zalesak",
         "client": "Zálešák s.r.o.",
-        "thumbnail": "/assets/image/portfolio/zalesak/zalesak_header_01-scaled.webp"
+        "thumbnail": "/assets/img/portfolio/zalesak/zalesak_header_01-scaled.webp"
       },
       {
         "id": 3,
         "title": "Maskot prezentuje firmu nejlépe",
         "link": "/portfolio/rychle-berle",
         "client": "Rychlé berle s.r.o.",
-        "thumbnail": "/assets/image/portfolio/rychle-berle/test.gif"
-      },
+        "thumbnail": "/assets/img/portfolio/rychle-berle/test.gif",
+        "isUnoptimized": true
+      }
       {
         "id": 4,
         "title": "All you need is wine",
         "link": "/portfolio/wine-gurmet",
         "client": "Wine Gurmet s.r.o.",
-        "thumbnail": "/assets/image/portfolio/wine-gurmet/portfolio_winegurmet_3.webp"
+        "thumbnail": "/assets/img/portfolio/wine-gurmet/portfolio_winegurmet_3.webp"
       }
     ]
   },

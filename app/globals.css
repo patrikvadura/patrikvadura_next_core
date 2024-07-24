@@ -12,6 +12,10 @@
   }
 }
 
+main {
+  @apply bg-primary;
+}
+
 .dopen {
   opacity: 0;
 }

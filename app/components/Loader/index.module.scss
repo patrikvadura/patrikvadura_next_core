@@ -1,15 +1,22 @@
 .loader {
-  width: 6rem;
+  @apply w-[6rem];
 
   svg {
-    max-width: 6rem;
+    @apply max-w-[6rem];
+  }
+
+  &Wrap {
+    @apply fixed flex justify-center items-center overflow-hidden w-screen h-screen top-0 left-0 z-[99999];
+
+    svg {
+      @apply absolute fill-primary-light top-0 w-screen h-[110vh];
+    }
   }
 }
 
 .loadingAnimation__path {
-  stroke: white;
-  stroke-width: 2;
-  fill: none;
+  @apply fill-none stroke-white stroke-2;
+
   stroke-dasharray: 600;
   stroke-dashoffset: 600;
   animation: stroke 2s linear;

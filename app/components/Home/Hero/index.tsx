@@ -1,8 +1,8 @@
 'use client'
-import React, { useEffect, useLayoutEffect, useRef } from 'react'
+import React, { useLayoutEffect, useRef } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Icon } from '@iconify/react'
-// import loadBackgroudImages from '@/common/loadBackgroudImages'
 import classes from './index.module.scss'
 
 import { gsap } from 'gsap'
@@ -24,9 +24,6 @@ function Header() {
     // Cleanup function
     return () => tl.kill()
   }, [])
-  useEffect(() => {
-    // loadBackgroudImages()
-  }, [])
 
   const currentYear = new Date().getFullYear()
   const yearExperience = currentYear - 2014
@@ -39,7 +36,9 @@ function Header() {
             <div className="caption">
               <h1 className={classes.title}>
                 Váš partner pro vizuální komunikaci a podporu vaší značky{' '}
-            <Link href="/portfolio" className={classes.subtitle}>Prozkoumejte moji práci</Link>
+                <Link href="/portfolio" className={classes.subtitle}>
+                  Prozkoumejte moji práci
+                </Link>
               </h1>
               <div className="flex flex-col md:flex-row mt-8 items-center">
                 <div className="basis-3/3 lg:basis-2/5">
@@ -97,10 +96,13 @@ function Header() {
         </div>
       </div>
 
-      <div
-        className="bg-pattern bg-img opacity-4"
-        data-background="/dark/assets/imgs/patterns/pattern2.png"
-      ></div>
+      <Image
+        src="/assets/img/hero/hero_bg.webp"
+        width={1920}
+        height={1000}
+        className={classes.bgImage}
+        alt=""
+      />
     </div>
   )
 }

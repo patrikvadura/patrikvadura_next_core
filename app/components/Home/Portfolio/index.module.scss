@@ -2,8 +2,12 @@
   @apply container flex flex-wrap lg:flex-nowrap gap-y-4 w-full overflow-hidden;
 }
 
+.title {
+  @apply text-4xl py-8 translate-y-24 transition-all duration-300 ease-in-out;
+}
+
 .item {
-  @apply basis-full px-2 transition-all duration-300 ease-in-out;
+  @apply basis-full px-2 transition-all duration-[1s] ease-in-out;
 
   @screen md {
     @apply basis-2/4;
@@ -14,7 +18,7 @@
   }
 
   &Wrapper {
-    @apply w-full h-[340px] md:h-[440px] rounded-2xl relative overflow-hidden;
+    @apply w-full h-[340px] md:h-[440px] rounded-2xl relative overflow-hidden transition-all duration-[1s] ease-in-out;
 
     img {
       @apply w-full h-full object-cover opacity-90;
@@ -25,15 +29,14 @@
 }
 
 .descriptionWrapper {
-  @apply py-4 px-6 absolute lg:opacity-0 rounded-xl bottom-4 left-4 right-4 flex flex-col space-y-3 lg:-translate-y-12;
+  @apply py-4 px-6 absolute lg:opacity-0 rounded-xl bottom-4 left-4 right-4 flex flex-col space-y-3 lg:-translate-y-12 transition-all duration-300 ease-in-out;
 
   background: rgba(0, 0, 0, .1);
   -webkit-backdrop-filter: blur(30px);
   backdrop-filter: blur(30px);
-  transition: all .4s;
 }
 
-.title {
+.subtitle {
   @apply text-xl;
 }
 

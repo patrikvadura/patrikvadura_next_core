@@ -5,7 +5,7 @@ import Blog from '@/components/dark/creative-portfolio/Blog'
 import Header from '@/app/components/Home/Hero'
 import Marquee from '@/components/dark/creative-portfolio/Marquee'
 import Portfolio from '@/app/components/Home/Portfolio'
-import Services from '@/components/dark/creative-portfolio/Services'
+import Services from '@/app/components/Home/Services'
 import Team from '@/components/dark/creative-portfolio/Team'
 import Testimonials from '@/components/dark/creative-portfolio/Testimonials'
 
@@ -19,11 +19,9 @@ export default function CreativePortfolio() {
   return (
     <>
       <div id="smooth-content">
-        <main className="bg-primary">
-          <div className="bg-primary o-hidden">
-            <Header />
-            <Portfolio />
-          </div>
+        <main>
+          <Header />
+          <Portfolio />
           <div id="wrapper" />
           <Services />
           <About />

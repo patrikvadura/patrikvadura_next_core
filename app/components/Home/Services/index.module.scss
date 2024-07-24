@@ -1,0 +1,34 @@
+.main {
+  @apply bg-primary-light py-24 mt-8;
+}
+
+.headings {
+  @apply text-center mb-8;
+}
+
+.title {
+  @apply text-4xl translate-y-24;
+}
+
+.subtitle {
+  @apply text-xl text-secondary tracking-wider translate-y-16;
+}
+
+.items {
+  @apply flex flex-col md:flex-row gap-4 md:gap-8 relative z-10;
+}
+
+.item {
+  @apply basis-full md:basis-1/3;
+
+  &Display {
+    @apply text-[140px] font-bold text-transparent opacity-50;
+
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 1px;
+  }
+
+  &Title {
+
+  }
+}

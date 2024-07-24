@@ -79,12 +79,16 @@
   @apply mt-8;
 
   @screen md {
-    @apply absolute top-1/2 -right-[1px];
+    @apply absolute top-1/2 -right-[1px] py-3 px-6;
 
     width: max-content;
-    padding: 10px 25px;
-    border-radius: 15px 15px 0 0;
     transform-origin: top right;
     transform: rotate(-90deg) translateX(50%) translateY(-100%);
   }
+}
+
+.bgImage {
+  @apply absolute top-0 left-0 w-full h-full bg-cover bg-no-repeat opacity-10;
+
+  z-index: 2;
 }

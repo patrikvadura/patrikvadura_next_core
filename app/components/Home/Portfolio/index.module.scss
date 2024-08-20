@@ -7,15 +7,7 @@
 }
 
 .item {
-  @apply basis-full px-2 transition-all duration-[1s] ease-in-out;
-
-  @screen md {
-    @apply basis-2/4;
-  }
-
-  @screen lg {
-    @apply basis-1/4 hover:basis-2/4;
-  }
+  @apply basis-full px-2 transition-all duration-[1s] ease-in-out md:basis-2/4 lg:basis-1/4 lg:hover:basis-2/4;
 
   &Wrapper {
     @apply w-full h-[340px] md:h-[440px] rounded-2xl relative overflow-hidden transition-all duration-[1s] ease-in-out;
